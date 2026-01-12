@@ -2,6 +2,7 @@ export type Tab4Item = {
   id: number;
   title: string;
   subtitle: string;
+  count: number;
 };
 
 export const tab4Items: Tab4Item[] = Array.from({ length: 120 }, (_, index) => {
@@ -11,5 +12,6 @@ export const tab4Items: Tab4Item[] = Array.from({ length: 120 }, (_, index) => {
     id,
     title: `Item ${id}`,
     subtitle: `Subtitle ${id}: short description for list item ${id}.`,
+    count: (id * 7) % 37 + 1,
   };
 });

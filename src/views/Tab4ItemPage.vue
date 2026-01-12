@@ -13,6 +13,7 @@
       <template v-if="item">
         <h2>{{ item.title }}</h2>
         <p>{{ item.subtitle }}</p>
+        <p>Aantal: {{ item.count }}</p>
       </template>
       <template v-else>
         <h2>Item not found</h2>
