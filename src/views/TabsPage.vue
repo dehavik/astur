@@ -18,6 +18,11 @@
           <ion-icon :icon="square" />
           <ion-label>Tab 3</ion-label>
         </ion-tab-button>
+
+        <ion-tab-button tab="tab4" href="/tabs/tab4">
+          <ion-icon :icon="list" />
+          <ion-label>Tab 4</ion-label>
+        </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
   </ion-page>
@@ -33,7 +38,7 @@ import {
   IonPage,
   IonRouterOutlet,
 } from '@ionic/vue';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { ellipse, list, square, triangle } from 'ionicons/icons';
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const tabSlot = ref<'top' | 'bottom'>('bottom');
